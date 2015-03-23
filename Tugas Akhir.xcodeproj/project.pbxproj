@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3221ABFBE24002432DA /* AppDelegate.swift */; };
+		FFB4F3251ABFBE24002432DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3241ABFBE24002432DA /* ViewController.swift */; };
+		FFB4F3281ABFBE24002432DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F3261ABFBE24002432DA /* Main.storyboard */; };
+		FFB4F32A1ABFBE24002432DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F3291ABFBE24002432DA /* Images.xcassets */; };
+		FFB4F32D1ABFBE24002432DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F32B1ABFBE24002432DA /* LaunchScreen.xib */; };
+		FFB4F3391ABFBE24002432DA /* Tugas_AkhirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3381ABFBE24002432DA /* Tugas_AkhirTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFB4F3331ABFBE24002432DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB4F3151ABFBE24002432DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB4F31C1ABFBE24002432DA;
+			remoteInfo = "Tugas Akhir";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFB4F31D1ABFBE24002432DA /* Tugas Akhir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tugas Akhir.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB4F3211ABFBE24002432DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB4F3221ABFBE24002432DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFB4F3241ABFBE24002432DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFB4F3271ABFBE24002432DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFB4F3291ABFBE24002432DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFB4F32C1ABFBE24002432DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FFB4F3321ABFBE24002432DA /* Tugas AkhirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tugas AkhirTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB4F3371ABFBE24002432DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB4F3381ABFBE24002432DA /* Tugas_AkhirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tugas_AkhirTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB4F31A1ABFBE24002432DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F32F1ABFBE24002432DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFB4F3141ABFBE24002432DA = {
+			isa = PBXGroup;
+			children = (
+				FFB4F31F1ABFBE24002432DA /* Tugas Akhir */,
+				FFB4F3351ABFBE24002432DA /* Tugas AkhirTests */,
+				FFB4F31E1ABFBE24002432DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB4F31E1ABFBE24002432DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F31D1ABFBE24002432DA /* Tugas Akhir.app */,
+				FFB4F3321ABFBE24002432DA /* Tugas AkhirTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB4F31F1ABFBE24002432DA /* Tugas Akhir */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F3221ABFBE24002432DA /* AppDelegate.swift */,
+				FFB4F3241ABFBE24002432DA /* ViewController.swift */,
+				FFB4F3261ABFBE24002432DA /* Main.storyboard */,
+				FFB4F3291ABFBE24002432DA /* Images.xcassets */,
+				FFB4F32B1ABFBE24002432DA /* LaunchScreen.xib */,
+				FFB4F3201ABFBE24002432DA /* Supporting Files */,
+			);
+			path = "Tugas Akhir";
+			sourceTree = "<group>";
+		};
+		FFB4F3201ABFBE24002432DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F3211ABFBE24002432DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFB4F3351ABFBE24002432DA /* Tugas AkhirTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F3381ABFBE24002432DA /* Tugas_AkhirTests.swift */,
+				FFB4F3361ABFBE24002432DA /* Supporting Files */,
+			);
+			path = "Tugas AkhirTests";
+			sourceTree = "<group>";
+		};
+		FFB4F3361ABFBE24002432DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFB4F3371ABFBE24002432DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB4F31C1ABFBE24002432DA /* Tugas Akhir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB4F33C1ABFBE24002432DA /* Build configuration list for PBXNativeTarget "Tugas Akhir" */;
+			buildPhases = (
+				FFB4F3191ABFBE24002432DA /* Sources */,
+				FFB4F31A1ABFBE24002432DA /* Frameworks */,
+				FFB4F31B1ABFBE24002432DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tugas Akhir";
+			productName = "Tugas Akhir";
+			productReference = FFB4F31D1ABFBE24002432DA /* Tugas Akhir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFB4F3311ABFBE24002432DA /* Tugas AkhirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB4F33F1ABFBE24002432DA /* Build configuration list for PBXNativeTarget "Tugas AkhirTests" */;
+			buildPhases = (
+				FFB4F32E1ABFBE24002432DA /* Sources */,
+				FFB4F32F1ABFBE24002432DA /* Frameworks */,
+				FFB4F3301ABFBE24002432DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB4F3341ABFBE24002432DA /* PBXTargetDependency */,
+			);
+			name = "Tugas AkhirTests";
+			productName = "Tugas AkhirTests";
+			productReference = FFB4F3321ABFBE24002432DA /* Tugas AkhirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB4F3151ABFBE24002432DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Achmad Fatoni";
+				TargetAttributes = {
+					FFB4F31C1ABFBE24002432DA = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FFB4F3311ABFBE24002432DA = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FFB4F31C1ABFBE24002432DA;
+					};
+				};
+			};
+			buildConfigurationList = FFB4F3181ABFBE24002432DA /* Build configuration list for PBXProject "Tugas Akhir" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFB4F3141ABFBE24002432DA;
+			productRefGroup = FFB4F31E1ABFBE24002432DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB4F31C1ABFBE24002432DA /* Tugas Akhir */,
+				FFB4F3311ABFBE24002432DA /* Tugas AkhirTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB4F31B1ABFBE24002432DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB4F3281ABFBE24002432DA /* Main.storyboard in Resources */,
+				FFB4F32D1ABFBE24002432DA /* LaunchScreen.xib in Resources */,
+				FFB4F32A1ABFBE24002432DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F3301ABFBE24002432DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB4F3191ABFBE24002432DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB4F3251ABFBE24002432DA /* ViewController.swift in Sources */,
+				FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB4F32E1ABFBE24002432DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB4F3391ABFBE24002432DA /* Tugas_AkhirTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFB4F3341ABFBE24002432DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB4F31C1ABFBE24002432DA /* Tugas Akhir */;
+			targetProxy = FFB4F3331ABFBE24002432DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFB4F3261ABFBE24002432DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB4F3271ABFBE24002432DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFB4F32B1ABFBE24002432DA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB4F32C1ABFBE24002432DA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB4F33A1ABFBE24002432DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFB4F33B1ABFBE24002432DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFB4F33D1ABFBE24002432DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tugas Akhir/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFB4F33E1ABFBE24002432DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tugas Akhir/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FFB4F3401ABFBE24002432DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tugas AkhirTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tugas Akhir.app/Tugas Akhir";
+			};
+			name = Debug;
+		};
+		FFB4F3411ABFBE24002432DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tugas AkhirTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tugas Akhir.app/Tugas Akhir";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB4F3181ABFBE24002432DA /* Build configuration list for PBXProject "Tugas Akhir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB4F33A1ABFBE24002432DA /* Debug */,
+				FFB4F33B1ABFBE24002432DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB4F33C1ABFBE24002432DA /* Build configuration list for PBXNativeTarget "Tugas Akhir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB4F33D1ABFBE24002432DA /* Debug */,
+				FFB4F33E1ABFBE24002432DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFB4F33F1ABFBE24002432DA /* Build configuration list for PBXNativeTarget "Tugas AkhirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB4F3401ABFBE24002432DA /* Debug */,
+				FFB4F3411ABFBE24002432DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB4F3151ABFBE24002432DA /* Project object */;
+}
