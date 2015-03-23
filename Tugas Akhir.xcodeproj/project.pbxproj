@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3221ABFBE24002432DA /* AppDelegate.swift */; };
-		FFB4F3251ABFBE24002432DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3241ABFBE24002432DA /* ViewController.swift */; };
 		FFB4F3281ABFBE24002432DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F3261ABFBE24002432DA /* Main.storyboard */; };
 		FFB4F32A1ABFBE24002432DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F3291ABFBE24002432DA /* Images.xcassets */; };
 		FFB4F32D1ABFBE24002432DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F32B1ABFBE24002432DA /* LaunchScreen.xib */; };
 		FFB4F3391ABFBE24002432DA /* Tugas_AkhirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3381ABFBE24002432DA /* Tugas_AkhirTests.swift */; };
+		FFB4F3431ABFBE8B002432DA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3421ABFBE8B002432DA /* HomeTableViewController.swift */; };
+		FFB4F3451ABFC0FC002432DA /* KotaAsalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3441ABFC0FC002432DA /* KotaAsalTableViewController.swift */; };
+		FFB4F3471ABFF57A002432DA /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3461ABFF57A002432DA /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		FFB4F31D1ABFBE24002432DA /* Tugas Akhir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tugas Akhir.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB4F3211ABFBE24002432DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB4F3221ABFBE24002432DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFB4F3241ABFBE24002432DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFB4F3271ABFBE24002432DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFB4F3291ABFBE24002432DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FFB4F32C1ABFBE24002432DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FFB4F3321ABFBE24002432DA /* Tugas AkhirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tugas AkhirTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB4F3371ABFBE24002432DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB4F3381ABFBE24002432DA /* Tugas_AkhirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tugas_AkhirTests.swift; sourceTree = "<group>"; };
+		FFB4F3421ABFBE8B002432DA /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		FFB4F3441ABFC0FC002432DA /* KotaAsalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KotaAsalTableViewController.swift; sourceTree = "<group>"; };
+		FFB4F3461ABFF57A002432DA /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				FFB4F3221ABFBE24002432DA /* AppDelegate.swift */,
-				FFB4F3241ABFBE24002432DA /* ViewController.swift */,
 				FFB4F3261ABFBE24002432DA /* Main.storyboard */,
 				FFB4F3291ABFBE24002432DA /* Images.xcassets */,
 				FFB4F32B1ABFBE24002432DA /* LaunchScreen.xib */,
 				FFB4F3201ABFBE24002432DA /* Supporting Files */,
+				FFB4F3421ABFBE8B002432DA /* HomeTableViewController.swift */,
+				FFB4F3441ABFC0FC002432DA /* KotaAsalTableViewController.swift */,
+				FFB4F3461ABFF57A002432DA /* AppData.swift */,
 			);
 			path = "Tugas Akhir";
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB4F3251ABFBE24002432DA /* ViewController.swift in Sources */,
+				FFB4F3451ABFC0FC002432DA /* KotaAsalTableViewController.swift in Sources */,
+				FFB4F3431ABFBE8B002432DA /* HomeTableViewController.swift in Sources */,
 				FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */,
+				FFB4F3471ABFF57A002432DA /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
