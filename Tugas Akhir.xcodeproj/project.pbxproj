@@ -413,6 +413,7 @@
 				FFB4F33E1ABFBE24002432DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFB4F33F1ABFBE24002432DA /* Build configuration list for PBXNativeTarget "Tugas AkhirTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +422,7 @@
 				FFB4F3411ABFBE24002432DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

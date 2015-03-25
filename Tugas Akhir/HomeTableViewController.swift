@@ -11,11 +11,33 @@ import UIKit
 class HomeTableViewController: UITableViewController {
     
     var kotaAsalSelected:String!
+    var urlPath:String!
     @IBOutlet weak var kotaAsalLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        kotaAsalLabel.text = self.kotaAsalSelected
+        
+        if appData.token == "" {
+            let url = NSURL(string: appData.tiketCom + "apiv1/payexpress?method=getToken&secretkey=" + appData.secretKey + ""  + appData.outputJson)
+            println(url)
+            let session = NSURLSession.sharedSession()
+            let task = session.dataTaskWithURL(url!, completionHandler: {data, response, error-> Void in
+                if error != nil {
+                    println(error)
+                }else{
+                    let jsonResult: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
+//                    println(jsonResult)
+                    appData.token = jsonResult["token"] as String
+                }
+                
+            })
+            task.resume()
+
+        }
+        println(appData.token)
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

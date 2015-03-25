@@ -8,6 +8,7 @@
 
 struct appData {
     static var secretKey = "64de419c65901078dc7d026194357579"
-    static var token = ""
-    static var urlPath = "https://api.sandbox.tiket.com/"
+    static var token:String! = ""
+    static var tiketCom = "http://api.sandbox.tiket.com/"
+    static var outputJson = "&output=json"
 }

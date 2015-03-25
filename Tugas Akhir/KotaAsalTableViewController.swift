@@ -16,8 +16,38 @@ class KotaAsalTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.kotaAsal = ["Surabaya", "Jakarta", "Bandung"]
+//        self.kotaAsal = ["Surabaya", "Jakarta", "Bandung"]
         println(appData.token)
+        let url = NSURL(string: appData.tiketCom + "flight_api/all_airport?token=" + appData.token + ""  + appData.outputJson)
+        println(url)
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithURL(url!, completionHandler: {data, response, error-> Void in
+            if error != nil {
+                println(error)
+            }else{
+                let jsonResult: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
+                if let transformJson = jsonResult as? NSDictionary {
+                    if let allAirport = transformJson["all_airport"] as? NSDictionary {
+//                        println(allAirport)
+                        if let airports = allAirport["airport"] as? NSArray {
+                            for airport in airports {
+                                if let locationName = airport["location_name"] as? String{
+                                    self.kotaAsal.append(locationName)
+                                }
+                                
+                                //println(airport["location_name"])
+                            }
+                            
+                        }
+                    }
+                }
+                //println(self.kotaAsal)
+            }
+            
+        })
+        task.resume()
+        
+        self.tableView.reloadData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
