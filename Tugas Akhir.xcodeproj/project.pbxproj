@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF3608BE1AC2675E00DAF8B6 /* TiketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3608BD1AC2675E00DAF8B6 /* TiketAPI.swift */; };
 		FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3221ABFBE24002432DA /* AppDelegate.swift */; };
 		FFB4F3281ABFBE24002432DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F3261ABFBE24002432DA /* Main.storyboard */; };
 		FFB4F32A1ABFBE24002432DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F3291ABFBE24002432DA /* Images.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF3608BD1AC2675E00DAF8B6 /* TiketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiketAPI.swift; path = ../TiketAPI.swift; sourceTree = "<group>"; };
 		FFB4F31D1ABFBE24002432DA /* Tugas Akhir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tugas Akhir.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB4F3211ABFBE24002432DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB4F3221ABFBE24002432DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		FFB4F31F1ABFBE24002432DA /* Tugas Akhir */ = {
 			isa = PBXGroup;
 			children = (
+				FF3608BD1AC2675E00DAF8B6 /* TiketAPI.swift */,
 				FFB4F3221ABFBE24002432DA /* AppDelegate.swift */,
 				FFB4F3261ABFBE24002432DA /* Main.storyboard */,
 				FFB4F3291ABFBE24002432DA /* Images.xcassets */,
@@ -220,6 +223,7 @@
 			files = (
 				FFB4F3451ABFC0FC002432DA /* KotaAsalTableViewController.swift in Sources */,
 				FFB4F3431ABFBE8B002432DA /* HomeTableViewController.swift in Sources */,
+				FF3608BE1AC2675E00DAF8B6 /* TiketAPI.swift in Sources */,
 				FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */,
 				FFB4F3471ABFF57A002432DA /* AppData.swift in Sources */,
 			);

@@ -11,4 +11,5 @@ struct appData {
     static var token:String! = ""
     static var tiketCom = "http://api.sandbox.tiket.com/"
     static var outputJson = "&output=json"
+    static var airports:[String] = []
 }

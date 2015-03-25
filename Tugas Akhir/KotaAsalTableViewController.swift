@@ -10,14 +10,16 @@ import UIKit
 
 class KotaAsalTableViewController: UITableViewController {
     
-    var kotaAsal:[String]!
+    var kotaAsal:[String]! = []
     var kotaAsalSelected:String!
+    var api = TiketAPI()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.kotaAsal = ["Surabaya", "Jakarta", "Bandung"]
-        println(appData.token)
+      
+        /* start get airports */
         let url = NSURL(string: appData.tiketCom + "flight_api/all_airport?token=" + appData.token + ""  + appData.outputJson)
         println(url)
         let session = NSURLSession.sharedSession()
@@ -41,13 +43,18 @@ class KotaAsalTableViewController: UITableViewController {
                         }
                     }
                 }
-                //println(self.kotaAsal)
+                println(self.kotaAsal)
             }
             
+            dispatch_async(dispatch_get_main_queue(), {
+                self.tableView.reloadData()
+                })
         })
         task.resume()
         
-        self.tableView.reloadData()
+        /*end get airports*/
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -93,6 +100,10 @@ class KotaAsalTableViewController: UITableViewController {
             let indexPath = tableView.indexPathForCell(cell)
             kotaAsalSelected = kotaAsal[indexPath!.row]
         }
+    }
+    
+    @IBAction func setAirports(segue: UIStoryboardSegue){
+        
     }
 
     /*
