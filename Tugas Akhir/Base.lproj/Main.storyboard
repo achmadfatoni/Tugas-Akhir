@@ -49,6 +49,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="98B-Vn-fyp" kind="push" identifier="selectKotaTujuan" id="zEW-hq-ZIq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -62,11 +65,43 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="kotaAsalLabel" destination="XQr-m1-m5C" id="mPv-bw-MW8"/>
+                        <outlet property="kotaTujuanLabel" destination="EIG-i4-QCX" id="LfE-65-7Vs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4w-R8-QW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="521" y="328"/>
+        </scene>
+        <!--Kota Tujuan-->
+        <scene sceneID="3Ui-5F-RpQ">
+            <objects>
+                <tableViewController id="98B-Vn-fyp" customClass="KotaTujuanTableViewController" customModule="Tugas_Akhir" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RZY-pi-2rA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="KotaTujuan" id="Rbg-7O-q8Z">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rbg-7O-q8Z" id="Kok-DU-xnL">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="e6G-ib-EaO" kind="unwind" identifier="selectKotaTujuan" unwindAction="selectKotaTujuan:" id="Sit-7M-A8e"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="98B-Vn-fyp" id="dJ2-Zx-GBg"/>
+                            <outlet property="delegate" destination="98B-Vn-fyp" id="EtW-Vo-gZp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Kota Tujuan" id="qsO-xB-i1F"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PoN-Dy-ILY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="e6G-ib-EaO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="752"/>
         </scene>
         <!--Kota Asal-->
         <scene sceneID="Dzi-By-llW">
@@ -97,7 +132,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdC-gU-hCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="RoP-Ae-C1k" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="998" y="328"/>
+            <point key="canvasLocation" x="952" y="16"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d7t-St-L87">

@@ -12,9 +12,11 @@ class HomeTableViewController: UITableViewController {
     
     
     @IBOutlet weak var kotaAsalLabel: UILabel!
+    @IBOutlet weak var kotaTujuanLabel: UILabel!
     
     let api = TiketAPI()
-    var kotaAsalSelected:String!
+    var kotaAsalSelected:Airport!
+    var kotaTujuanSelected:Airport!
     var urlPath:String!
     
 
@@ -35,7 +37,12 @@ class HomeTableViewController: UITableViewController {
     
     @IBAction func selectKotaAsal(segue: UIStoryboardSegue){
         let kotaAsalTableView = segue.sourceViewController as KotaAsalTableViewController
-        kotaAsalLabel.text = kotaAsalTableView.kotaAsalSelected
+        kotaAsalLabel.text = kotaAsalTableView.kotaAsalSelected.locationName
+    }
+    
+    @IBAction func selectKotaTujuan(segue: UIStoryboardSegue){
+        let kotaTujuanTableView = segue.sourceViewController as KotaTujuanTableViewController
+        kotaTujuanLabel.text = kotaTujuanTableView.kotaTujuanSelected.locationName
     }
     
     
