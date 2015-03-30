@@ -230,16 +230,56 @@
         <scene sceneID="jo0-FE-Wvg">
             <objects>
                 <tableViewController id="DAs-pd-ZvM" customClass="FlightTableViewController" customModule="Tugas_Akhir" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fEB-j7-3P5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="fEB-j7-3P5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Up2-Ag-pPW">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="flight" rowHeight="80" id="Up2-Ag-pPW" customClass="FlightTableViewCell" customModule="Tugas_Akhir" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Up2-Ag-pPW" id="2DY-nj-raa">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maskapai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q84-I0-Sm8">
+                                            <rect key="frame" x="20" y="11" width="170" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="170" id="y2p-wP-QxO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Harga" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhK-Vu-wSZ">
+                                            <rect key="frame" x="314" y="30" width="46" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ1-qf-qar">
+                                            <rect key="frame" x="20" y="51" width="128" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="128" id="Fnw-sU-puo"/>
+                                                <constraint firstAttribute="height" constant="21" id="JJf-EV-gdS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Q84-I0-Sm8" firstAttribute="leading" secondItem="2DY-nj-raa" secondAttribute="leadingMargin" constant="12" id="Glj-Sc-xsj"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="EJ1-qf-qar" secondAttribute="bottom" constant="-1" id="KJT-Hz-Qdc"/>
+                                        <constraint firstItem="EJ1-qf-qar" firstAttribute="top" secondItem="Q84-I0-Sm8" secondAttribute="bottom" constant="16" id="b69-xZ-sZx"/>
+                                        <constraint firstItem="EJ1-qf-qar" firstAttribute="leading" secondItem="Q84-I0-Sm8" secondAttribute="leading" id="pUr-Gh-EAB"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ZhK-Vu-wSZ" secondAttribute="trailing" constant="13" id="qvt-Za-Nhj"/>
+                                        <constraint firstItem="ZhK-Vu-wSZ" firstAttribute="centerY" secondItem="2DY-nj-raa" secondAttribute="centerY" id="xme-DT-vV1"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="hargaLabel" destination="ZhK-Vu-wSZ" id="bNO-tA-9yx"/>
+                                    <outlet property="jamLabel" destination="EJ1-qf-qar" id="n2U-w6-Fvf"/>
+                                    <outlet property="maskapaiLabel" destination="Q84-I0-Sm8" id="R1a-HW-eGU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -251,7 +291,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5N-Kt-GXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="880"/>
+            <point key="canvasLocation" x="270" y="876"/>
         </scene>
         <!--Kota Tujuan-->
         <scene sceneID="3Ui-5F-RpQ">

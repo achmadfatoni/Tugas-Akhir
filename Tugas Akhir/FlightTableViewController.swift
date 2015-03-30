@@ -11,11 +11,12 @@ import UIKit
 class FlightTableViewController: UITableViewController {
 
     var urlFlightString:String!
+    var flights: [Flight] = []
+    var count : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /* start get flight*/
         let url = NSURL(string: urlFlightString)
         println(url)
         let session = NSURLSession.sharedSession()
@@ -24,21 +25,28 @@ class FlightTableViewController: UITableViewController {
                 println(error)
             }else{
                 let jsonResult: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
-                println(jsonResult)
-//                if let transformJson = jsonResult as? NSDictionary {
-//                    if let allAirport = transformJson["all_airport"] as? NSDictionary {
-//                        //                        println(allAirport)
-//                        if let airports = allAirport["airport"] as? NSArray {
-//                            for airport in airports {
-//                                //                                println(airport)
-//                                let airportObject = Airport(data: airport as NSDictionary)
-//                                self.kotaTujuan.append(airportObject)
-//                            }
-//                            
-//                        }
-//                    }
-//                }
-                //                println(self.kotaAsal)
+//                println(jsonResult)
+                if let transformJson = jsonResult as? NSDictionary {
+                    if let departures = transformJson["departures"] as? NSDictionary {
+//                        println(departures)
+                        if let result = departures["result"] as? NSArray{
+                            //println(result)
+                            for flight in result {
+                                self.count++
+                                if let flightObject = flight as? NSDictionary {
+                                    var data = Flight(data: flightObject)
+                                    self.flights.append(data)
+//                                    if let airlines_name = flightObject["airlines_name"] as? String {
+//                                        self.flights.append(airlines_name)
+//                                    }
+                                }
+                                
+                            }
+                            //println(self.count)
+                        }
+                    }
+                }
+                //println(self.kotaAsal)
             }
             
             dispatch_async(dispatch_get_main_queue(), {
@@ -67,24 +75,27 @@ class FlightTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return flights.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("flight", forIndexPath: indexPath) as FlightTableViewCell
 
         // Configure the cell...
-
+        let index = flights[indexPath.row]
+        cell.maskapaiLabel.text = index.airlines_name
+        cell.jamLabel.text = index.simple_departure_time + " - " + index.simple_arrival_time
+        cell.hargaLabel.text = "Rp. " + index.price_value
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
