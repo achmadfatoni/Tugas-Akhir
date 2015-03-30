@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8638F9A5-DE06-4ED7-AE40-666E205BA1CA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tugas Akhir</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>43FFF4798193B3CB04E372FB058DBE5597794466</key>
+		<string>https://github.com/achmadfatoni/Tugas-Akhir.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tugas Akhir.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>43FFF4798193B3CB04E372FB058DBE5597794466</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/achmadfatoni/Tugas-Akhir.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>43FFF4798193B3CB04E372FB058DBE5597794466</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>43FFF4798193B3CB04E372FB058DBE5597794466</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Tugas%20Akhir</string>
+		</dict>
+	</array>
+</dict>
+</plist>

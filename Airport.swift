@@ -7,18 +7,18 @@
 //
 
 import Foundation
-class Airport{
+class Airport {
     var airportCode:String!
     var airportName:String!
     var countryId:String!
     var locationName:String!
     
-        init(data:NSDictionary){
-            self.airportCode = getStringFromJson(data, key: "airport_code")
-            self.airportName = getStringFromJson(data, key: "airport_name")
-            self.countryId = getStringFromJson(data, key: "country_id")
-            self.locationName = getStringFromJson(data, key: "location_name")
-        }
+    init(data:NSDictionary){
+        self.airportCode = getStringFromJson(data, key: "airport_code")
+        self.airportName = getStringFromJson(data, key: "airport_name")
+        self.countryId = getStringFromJson(data, key: "country_id")
+        self.locationName = getStringFromJson(data, key: "location_name")
+    }
     
     func getStringFromJson(data : NSDictionary, key: String) -> String {
         let info : AnyObject? = data[key]

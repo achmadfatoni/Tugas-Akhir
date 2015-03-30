@@ -16,8 +16,11 @@ class TiketAPI {
     
     func getToken() -> String {
         if appData.token == "" {
-            let url = NSURL(string: appData.tiketCom + "apiv1/payexpress?method=getToken&secretkey=" + appData.secretKey + ""  + appData.outputJson)
             
+            var urlString = appData.tiketCom + "apiv1/payexpress?method=getToken&secretkey=" + appData.secretKey + ""  + appData.outputJson
+            let url = NSURL(string: urlString)
+            
+            println("url get token : " + urlString)
             let session = NSURLSession.sharedSession()
             
             let task = session.dataTaskWithURL(url!, completionHandler: {
@@ -28,6 +31,7 @@ class TiketAPI {
                     }else{
                         let jsonResult: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
                         appData.token = jsonResult["token"] as String
+                        println("token :" + appData.token)
                     }
                 
             })
