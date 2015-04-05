@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9796C87177477E9E61012D78 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9796C98A4C8C6450DE7600AE /* .gitignore */; };
 		FF2CD6931AC50FAC004C7995 /* FlightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2CD6921AC50FAC004C7995 /* FlightTableViewController.swift */; };
 		FF2EFB481AC3096B008316D9 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2EFB471AC3096B008316D9 /* Airport.swift */; };
 		FF3193AD1AC909E4000D8A79 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3193AC1AC909E4000D8A79 /* Flight.swift */; };
 		FF3193AF1AC98CAE000D8A79 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3193AE1AC98CAE000D8A79 /* FlightTableViewCell.swift */; };
 		FF3608BE1AC2675E00DAF8B6 /* TiketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3608BD1AC2675E00DAF8B6 /* TiketAPI.swift */; };
 		FF6E39D81AC39EEE002225D7 /* KotaTujuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E39D71AC39EEE002225D7 /* KotaTujuanTableViewController.swift */; };
+		FFA3E2401ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3E23F1ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift */; };
+		FFA3E2421ACCF81C007BAFF2 /* ContactPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3E2411ACCF81C007BAFF2 /* ContactPerson.swift */; };
+		FFA3E2461ACD140D007BAFF2 /* DataPenumpangTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3E2451ACD140D007BAFF2 /* DataPenumpangTableViewController.swift */; };
 		FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3221ABFBE24002432DA /* AppDelegate.swift */; };
 		FFB4F3281ABFBE24002432DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F3261ABFBE24002432DA /* Main.storyboard */; };
 		FFB4F32A1ABFBE24002432DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB4F3291ABFBE24002432DA /* Images.xcassets */; };
@@ -21,6 +25,8 @@
 		FFB4F3431ABFBE8B002432DA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3421ABFBE8B002432DA /* HomeTableViewController.swift */; };
 		FFB4F3451ABFC0FC002432DA /* KotaAsalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3441ABFC0FC002432DA /* KotaAsalTableViewController.swift */; };
 		FFB4F3471ABFF57A002432DA /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3461ABFF57A002432DA /* AppData.swift */; };
+		FFE25AEC1ACBAD01004FEE41 /* RincianPenerbanganViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE25AEB1ACBAD01004FEE41 /* RincianPenerbanganViewController.swift */; };
+		FFE25AEE1ACBC581004FEE41 /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE25AED1ACBC581004FEE41 /* Passenger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9796C98A4C8C6450DE7600AE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		FF2CD6921AC50FAC004C7995 /* FlightTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewController.swift; sourceTree = "<group>"; };
 		FF2EFB471AC3096B008316D9 /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Airport.swift; path = ../Airport.swift; sourceTree = "<group>"; };
 		FF3193AC1AC909E4000D8A79 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		FF3193AE1AC98CAE000D8A79 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
 		FF3608BD1AC2675E00DAF8B6 /* TiketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiketAPI.swift; path = ../TiketAPI.swift; sourceTree = "<group>"; };
 		FF6E39D71AC39EEE002225D7 /* KotaTujuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KotaTujuanTableViewController.swift; sourceTree = "<group>"; };
+		FFA3E23F1ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPemesanTableViewController.swift; sourceTree = "<group>"; };
+		FFA3E2411ACCF81C007BAFF2 /* ContactPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPerson.swift; sourceTree = "<group>"; };
+		FFA3E2451ACD140D007BAFF2 /* DataPenumpangTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPenumpangTableViewController.swift; sourceTree = "<group>"; };
 		FFB4F31D1ABFBE24002432DA /* Tugas Akhir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tugas Akhir.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB4F3211ABFBE24002432DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB4F3221ABFBE24002432DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +62,8 @@
 		FFB4F3421ABFBE8B002432DA /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		FFB4F3441ABFC0FC002432DA /* KotaAsalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KotaAsalTableViewController.swift; sourceTree = "<group>"; };
 		FFB4F3461ABFF57A002432DA /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		FFE25AEB1ACBAD01004FEE41 /* RincianPenerbanganViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RincianPenerbanganViewController.swift; sourceTree = "<group>"; };
+		FFE25AED1ACBC581004FEE41 /* Passenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,8 @@
 				FF2EFB471AC3096B008316D9 /* Airport.swift */,
 				FF3608BD1AC2675E00DAF8B6 /* TiketAPI.swift */,
 				FF3193AC1AC909E4000D8A79 /* Flight.swift */,
+				FFE25AED1ACBC581004FEE41 /* Passenger.swift */,
+				FFA3E2411ACCF81C007BAFF2 /* ContactPerson.swift */,
 			);
 			name = TiketCom;
 			sourceTree = "<group>";
@@ -105,6 +119,9 @@
 				FFB4F3441ABFC0FC002432DA /* KotaAsalTableViewController.swift */,
 				FF6E39D71AC39EEE002225D7 /* KotaTujuanTableViewController.swift */,
 				FF2CD6921AC50FAC004C7995 /* FlightTableViewController.swift */,
+				FFE25AEB1ACBAD01004FEE41 /* RincianPenerbanganViewController.swift */,
+				FFA3E23F1ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift */,
+				FFA3E2451ACD140D007BAFF2 /* DataPenumpangTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -115,6 +132,7 @@
 				FFB4F31F1ABFBE24002432DA /* Tugas Akhir */,
 				FFB4F3351ABFBE24002432DA /* Tugas AkhirTests */,
 				FFB4F31E1ABFBE24002432DA /* Products */,
+				9796C98A4C8C6450DE7600AE /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,6 +269,7 @@
 				FFB4F3281ABFBE24002432DA /* Main.storyboard in Resources */,
 				FFB4F32D1ABFBE24002432DA /* LaunchScreen.xib in Resources */,
 				FFB4F32A1ABFBE24002432DA /* Images.xcassets in Resources */,
+				9796C87177477E9E61012D78 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,14 +288,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3193AD1AC909E4000D8A79 /* Flight.swift in Sources */,
+				FFA3E2421ACCF81C007BAFF2 /* ContactPerson.swift in Sources */,
+				FFA3E2461ACD140D007BAFF2 /* DataPenumpangTableViewController.swift in Sources */,
 				FF6E39D81AC39EEE002225D7 /* KotaTujuanTableViewController.swift in Sources */,
+				FFE25AEE1ACBC581004FEE41 /* Passenger.swift in Sources */,
 				FFB4F3451ABFC0FC002432DA /* KotaAsalTableViewController.swift in Sources */,
 				FFB4F3431ABFBE8B002432DA /* HomeTableViewController.swift in Sources */,
 				FF3608BE1AC2675E00DAF8B6 /* TiketAPI.swift in Sources */,
 				FF2EFB481AC3096B008316D9 /* Airport.swift in Sources */,
 				FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */,
+				FFA3E2401ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift in Sources */,
 				FFB4F3471ABFF57A002432DA /* AppData.swift in Sources */,
 				FF2CD6931AC50FAC004C7995 /* FlightTableViewController.swift in Sources */,
+				FFE25AEC1ACBAD01004FEE41 /* RincianPenerbanganViewController.swift in Sources */,
 				FF3193AF1AC98CAE000D8A79 /* FlightTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

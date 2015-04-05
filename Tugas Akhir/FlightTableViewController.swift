@@ -10,13 +10,16 @@ import UIKit
 
 class FlightTableViewController: UITableViewController {
 
-    var urlFlightString:String!
-    var flights: [Flight] = []
+
     var count : Int = 0
+    var flights: [Flight] = []
+    var urlFlightString:String!
+    var passengers : Passenger!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        urlFlightString = "http://api.sandbox.tiket.com/search/flight?d=CGK&a=SUB&date=2015-04-05&adult=1&child=0&infant=0&token=54e337cb5d005f29f42d9a96559a292bdbb448bc&output=json"
+
         let url = NSURL(string: urlFlightString)
         println(url)
         let session = NSURLSession.sharedSession()
@@ -27,6 +30,15 @@ class FlightTableViewController: UITableViewController {
                 let jsonResult: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
 //                println(jsonResult)
                 if let transformJson = jsonResult as? NSDictionary {
+                    
+                    //get passenger
+                    if let search_queries = transformJson["search_queries"] as? NSDictionary {
+                        println(search_queries)
+                        self.passengers = Passenger(data: search_queries)
+                        println(self.passengers.adult)
+                    }
+                    
+                    
                     if let departures = transformJson["departures"] as? NSDictionary {
 //                        println(departures)
                         if let result = departures["result"] as? NSArray{
@@ -36,13 +48,19 @@ class FlightTableViewController: UITableViewController {
                                 if let flightObject = flight as? NSDictionary {
                                     var data = Flight(data: flightObject)
                                     self.flights.append(data)
-//                                    if let airlines_name = flightObject["airlines_name"] as? String {
-//                                        self.flights.append(airlines_name)
-//                                    }
+                                }
+                                
+                                if self.count == 0 {
+                                    var dummyData = [
+                                        "airlines_name" : "Tidak ada data",
+                                        "price_value" : "Tidak ada data"
+                                    ]
+                                    var dataKosong = Flight(data: dummyData)
+                                    self.flights.append(dataKosong)
                                 }
                                 
                             }
-                            //println(self.count)
+                            println(self.count)
                         }
                     }
                 }
@@ -57,12 +75,8 @@ class FlightTableViewController: UITableViewController {
         
         /*end get flight*/
         
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //set back button title
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,49 +111,20 @@ class FlightTableViewController: UITableViewController {
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
+  
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "rincianPenerbangan" {
+            if let indexPath = self.tableView.indexPathForSelectedRow(){
+                let destinationController = segue.destinationViewController as RincianPenerbanganViewController
+                destinationController.flight = self.flights[indexPath.row]
+                destinationController.passengers = self.passengers
+                //println(self.passengers.adult)
+                //println(self.flights[indexPath.row].airlines_name)
+            }
+        }
     }
-    */
+    
 
 }
