@@ -14,18 +14,10 @@ class Passenger{
     var child:Int!
     var infant:Int!
     
-    init(data : NSDictionary){
-        self.adult = strToInt(data, key: "adult")
-        self.adult = strToInt(data, key: "child")
-        self.infant = strToInt(data, key: "infant")
+    init(adult : Int, child: Int, infant : Int){
+        self.adult = adult
+        self.child = child
+        self.infant = infant
     }
     
-    func strToInt(data : NSDictionary, key : String) -> Int {
-        if let passengers = data[key] as? String {
-            var data:Int = passengers.toInt()!
-            return data
-        }
-        
-        return 0
-    }
 }

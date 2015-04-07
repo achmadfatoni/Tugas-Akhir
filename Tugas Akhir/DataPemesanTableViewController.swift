@@ -17,6 +17,8 @@ class DataPemesanTableViewController: UITableViewController {
     @IBOutlet weak var email: UITextField!
     
     var contactPerson : ContactPerson!
+    var passengers : Passenger!
+    var flight : Flight!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,16 @@ class DataPemesanTableViewController: UITableViewController {
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
+        
+        
+        //dummy data pemesan
+        salutation.text = "mr"
+        firstName.text = "achmad"
+        lastName.text = "fatoni"
+        phone.text = "081515339555"
+        email.text = "achmadfaton@gmail.com"
+        
+        
         var error = 0
         var message = ""
         
@@ -86,6 +98,16 @@ class DataPemesanTableViewController: UITableViewController {
         }
         
         contactPerson = ContactPerson(salutation: salutation.text, firstName: firstName.text, lastName: lastName.text, phone: phone.text, emailAddress: email.text)
+        
+        println("------------------------------------")
+        println("---------- Contact Person ----------")
+        println("------------------------------------")
+        println("salutation     : " + contactPerson.salutation)
+        println("firstname      : " + contactPerson.firstName)
+        println("lastname       : " + contactPerson.lastName)
+        println("phone          : " + contactPerson.phone)
+        println("email address  : " + contactPerson.emailAddress)
+        println("------------------------------------")
         return true
     }
     
@@ -93,6 +115,8 @@ class DataPemesanTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let destionationControler = segue.destinationViewController as DataPenumpangTableViewController
         destionationControler.contactPerson = self.contactPerson
+        destionationControler.passengers = self.passengers
+        destionationControler.flight = self.flight
     }
 
 

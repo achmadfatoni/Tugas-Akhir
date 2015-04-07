@@ -22,7 +22,13 @@ class KotaAsalTableViewController: UITableViewController {
         /* start get airports */
         var urlString = appData.tiketCom + "flight_api/all_airport?token=" + appData.token + ""  + appData.outputJson
         let url = NSURL(string: urlString)
-        println("Url get airports : " + urlString)
+        
+        println("\n-------------------------------------")
+        println("---------- URL GET Airport ----------")
+        println("-------------------------------------\n")
+        println(urlString)
+        println("-------------------------------------\n")
+        
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url!, completionHandler: {data, response, error-> Void in
             if error != nil {
@@ -92,7 +98,12 @@ class KotaAsalTableViewController: UITableViewController {
             let cell = sender as UITableViewCell
             let indexPath = tableView.indexPathForCell(cell)
             kotaAsalSelected = kotaAsal[indexPath!.row]
+            
+            
+            println("\n-------------------------------")
+            println("---------- Kota Asal -----------")
             println(kotaAsalSelected.locationName)
+            println("---------------------------------\n")
         }
     }
     

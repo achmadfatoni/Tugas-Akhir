@@ -48,12 +48,16 @@ class HomeTableViewController: UITableViewController, UITextFieldDelegate {
     var urlPath:String!
     
     //penumpang
+    var passenger : Passenger!
     var penumpangDewasa : Int!
     var penumpangAnak : Int!
     var penumpangBayi : Int!
     
 
     override func viewDidLoad() {
+        //set back button title
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
+        
         didChangeDate()
         toggleDatePicker()
         self.api.getToken()
@@ -61,12 +65,6 @@ class HomeTableViewController: UITableViewController, UITextFieldDelegate {
         penumpangDewasaTxtField.text = "1"
         penumpangAnakTxtField.text = "0"
         penumpangBayiTxtField.text = "0"
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -105,7 +103,6 @@ class HomeTableViewController: UITableViewController, UITextFieldDelegate {
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         switch(indexPath.section, indexPath.row){
         case (2, 0):
-            println("cliked")
             toggleDatePicker()
         default:
             ()
@@ -189,11 +186,21 @@ class HomeTableViewController: UITableViewController, UITextFieldDelegate {
                 return false
             }
             
+            self.passenger = Passenger(adult: penumpangDewasa, child: penumpangAnak, infant: penumpangBayi)
+            println("--------------------------------------")
+            println("---------- Jumlah Penumpang ----------")
+            println("--------------------------------------")
+            println("Penumpang Dewasa   : \(penumpangDewasa)")
+            println("Penumpang Anak     : \(penumpangAnak)")
+            println("penumpang Bayi     : \(penumpangBayi)")
+            println("--------------------------------------")
+            
         }
+        
         
         return true
     }
-    
+
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -202,10 +209,10 @@ class HomeTableViewController: UITableViewController, UITextFieldDelegate {
             
             var flightTableViewController = segue.destinationViewController as FlightTableViewController
             flightTableViewController.urlFlightString = appData.tiketCom + "search/flight?d=" + kotaAsalSelected.airportCode + "&a=" + kotaTujuanSelected.airportCode + "&date=" + self.tanggalKeberangkatan + "&adult=\(penumpangDewasa!)&child=\(penumpangAnak!)&infant=\(penumpangBayi!)" + "&token=\(appData.token)" + appData.outputJson
+            flightTableViewController.passengers = self.passenger
             
         }
         
     }
-    
 
 }

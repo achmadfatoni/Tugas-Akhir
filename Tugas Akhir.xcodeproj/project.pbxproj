@@ -14,6 +14,7 @@
 		FF3193AF1AC98CAE000D8A79 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3193AE1AC98CAE000D8A79 /* FlightTableViewCell.swift */; };
 		FF3608BE1AC2675E00DAF8B6 /* TiketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3608BD1AC2675E00DAF8B6 /* TiketAPI.swift */; };
 		FF6E39D81AC39EEE002225D7 /* KotaTujuanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E39D71AC39EEE002225D7 /* KotaTujuanTableViewController.swift */; };
+		FF90CE031AD18060004545B1 /* PassengerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CE021AD18060004545B1 /* PassengerDetail.swift */; };
 		FFA3E2401ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3E23F1ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift */; };
 		FFA3E2421ACCF81C007BAFF2 /* ContactPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3E2411ACCF81C007BAFF2 /* ContactPerson.swift */; };
 		FFA3E2461ACD140D007BAFF2 /* DataPenumpangTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA3E2451ACD140D007BAFF2 /* DataPenumpangTableViewController.swift */; };
@@ -47,6 +48,7 @@
 		FF3193AE1AC98CAE000D8A79 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
 		FF3608BD1AC2675E00DAF8B6 /* TiketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiketAPI.swift; path = ../TiketAPI.swift; sourceTree = "<group>"; };
 		FF6E39D71AC39EEE002225D7 /* KotaTujuanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KotaTujuanTableViewController.swift; sourceTree = "<group>"; };
+		FF90CE021AD18060004545B1 /* PassengerDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengerDetail.swift; sourceTree = "<group>"; };
 		FFA3E23F1ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPemesanTableViewController.swift; sourceTree = "<group>"; };
 		FFA3E2411ACCF81C007BAFF2 /* ContactPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPerson.swift; sourceTree = "<group>"; };
 		FFA3E2451ACD140D007BAFF2 /* DataPenumpangTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPenumpangTableViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				FF3193AC1AC909E4000D8A79 /* Flight.swift */,
 				FFE25AED1ACBC581004FEE41 /* Passenger.swift */,
 				FFA3E2411ACCF81C007BAFF2 /* ContactPerson.swift */,
+				FF90CE021AD18060004545B1 /* PassengerDetail.swift */,
 			);
 			name = TiketCom;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				FF2EFB481AC3096B008316D9 /* Airport.swift in Sources */,
 				FFB4F3231ABFBE24002432DA /* AppDelegate.swift in Sources */,
 				FFA3E2401ACCE8BF007BAFF2 /* DataPemesanTableViewController.swift in Sources */,
+				FF90CE031AD18060004545B1 /* PassengerDetail.swift in Sources */,
 				FFB4F3471ABFF57A002432DA /* AppData.swift in Sources */,
 				FF2CD6931AC50FAC004C7995 /* FlightTableViewController.swift in Sources */,
 				FFE25AEC1ACBAD01004FEE41 /* RincianPenerbanganViewController.swift in Sources */,

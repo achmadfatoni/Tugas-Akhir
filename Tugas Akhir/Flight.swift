@@ -9,6 +9,8 @@
 import Foundation
 
 class Flight {
+    var flight_id: String!
+    
     var airlines_name: String!
     var price_value: String!
     
@@ -19,6 +21,7 @@ class Flight {
     var arrival_city_name: String!
     
     init(data:NSDictionary){
+        self.flight_id = getStringFromJson(data, key: "flight_id")
         self.airlines_name = getStringFromJson(data, key: "airlines_name")
         self.price_value = getStringFromJson(data, key: "price_value")
         self.simple_departure_time = getTime(data, key: "simple_departure_time")

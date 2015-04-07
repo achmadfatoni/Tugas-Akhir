@@ -34,9 +34,17 @@ class RincianPenerbanganViewController: UIViewController {
         //set back button title
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
         
-        //println(self.airlinesName.text)
-        //println(self.flight.airlines_name)
-        
+        println("_________________________________________")
+        println("---------- RINCIAN PENERBANGAN ----------")
+        println("_________________________________________")
+        println("flight_id              : " + self.flight.flight_id)
+        println("airlines_name          : " + self.flight.airlines_name)
+        println("price value            : " + self.flight.price_value)
+        println("simple_departue_time   : " + self.flight.simple_departure_time)
+        println("simple_arrival_time    : " + self.flight.simple_arrival_time)
+        println("departure_city_name    : " + self.flight.departure_city_name)
+        println("arrival_city_name      : " + self.flight.arrival_city_name)
+        println("________________________________________\n")
         //set label value
         self.airlinesName?.text = flight.airlines_name
         self.arrivalAirport?.text = flight.arrival_city_name
@@ -54,14 +62,15 @@ class RincianPenerbanganViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let destinationController = segue.destinationViewController as DataPemesanTableViewController
+        destinationController.passengers = self.passengers
+        destinationController.flight = self.flight
     }
-    */
+    
 
 }

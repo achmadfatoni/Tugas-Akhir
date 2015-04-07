@@ -18,10 +18,21 @@ class FlightTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        urlFlightString = "http://api.sandbox.tiket.com/search/flight?d=CGK&a=SUB&date=2015-04-05&adult=1&child=0&infant=0&token=54e337cb5d005f29f42d9a96559a292bdbb448bc&output=json"
+        
+        //set back button title
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
+        
+      urlFlightString = "http://api.sandbox.tiket.com/search/flight?d=CGK&a=SUB&date=2015-04-08&adult=1&child=0&infant=0&token=54e337cb5d005f29f42d9a96559a292bdbb448bc&output=json"
 
         let url = NSURL(string: urlFlightString)
+        
+        println("------------------------------------")
+        println("---------- Get Flight URL ----------")
+        println("------------------------------------")
         println(url)
+        println("------------------------------------")
+        
+        
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url!, completionHandler: {data, response, error-> Void in
             if error != nil {
@@ -30,14 +41,6 @@ class FlightTableViewController: UITableViewController {
                 let jsonResult: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
 //                println(jsonResult)
                 if let transformJson = jsonResult as? NSDictionary {
-                    
-                    //get passenger
-                    if let search_queries = transformJson["search_queries"] as? NSDictionary {
-                        println(search_queries)
-                        self.passengers = Passenger(data: search_queries)
-                        println(self.passengers.adult)
-                    }
-                    
                     
                     if let departures = transformJson["departures"] as? NSDictionary {
 //                        println(departures)
@@ -60,12 +63,17 @@ class FlightTableViewController: UITableViewController {
                                 }
                                 
                             }
-                            println(self.count)
+                            
+                            println("_________________________________________________")
+                            println("---------- Jumlah Penerbangan Tersedia ----------")
+                            println("_________________________________________________")
+                            println(self.flights.count)
+                            println("_________________________________________________\n")
                         }
                     }
                 }
-                //println(self.kotaAsal)
             }
+            
             
             dispatch_async(dispatch_get_main_queue(), {
                 self.tableView.reloadData()
@@ -75,8 +83,7 @@ class FlightTableViewController: UITableViewController {
         
         /*end get flight*/
         
-        //set back button title
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
